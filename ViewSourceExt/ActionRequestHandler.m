@@ -18,37 +18,41 @@
 @implementation ActionRequestHandler
 
 - (void)beginRequestWithExtensionContext:(NSExtensionContext *)context {
-    self.extensionContext = context;
+  self.extensionContext = context;
     
-    // Boilerplate required for some reason...
-    [context.inputItems enumerateObjectsUsingBlock:^(NSExtensionItem* item, NSUInteger idx, BOOL *stop) {
-        [item.attachments enumerateObjectsUsingBlock:^(NSItemProvider* itemProvider, NSUInteger idx, BOOL *stop) {
-            if ([itemProvider hasItemConformingToTypeIdentifier:(NSString *)kUTTypePropertyList]) {
-                [itemProvider loadItemForTypeIdentifier:(NSString *)kUTTypePropertyList options:nil completionHandler:^(NSDictionary *dictionary, NSError *error) {
-
-                }];
-            }
-        }];
+  [context.inputItems enumerateObjectsUsingBlock:^(NSExtensionItem* item, NSUInteger idx, BOOL *stop) {
+    [item.attachments enumerateObjectsUsingBlock:^(NSItemProvider* itemProvider, NSUInteger idx, BOOL *stop) {
+      if ([itemProvider hasItemConformingToTypeIdentifier:(NSString *)kUTTypePropertyList]) {
+        [itemProvider loadItemForTypeIdentifier:(NSString *)kUTTypePropertyList options:nil completionHandler:^(NSDictionary *dictionary, NSError *error) { }];
+      }
     }];
+  }];
     
-    [self doneWithResults:nil];
+  [self doneWithResults:nil];
 }
 
 
 - (void)doneWithResults:(NSDictionary *)resultsForJavaScriptFinalize {
-    resultsForJavaScriptFinalize = @{};
-    NSDictionary *resultsDictionary = @{ NSExtensionJavaScriptFinalizeArgumentKey: resultsForJavaScriptFinalize };
+  // Load static assets
+  NSString *scriptPath      = [[NSBundle mainBundle] pathForResource:@"rainbow" ofType:@"js"];
+  NSString *scriptContents  = [NSString stringWithContentsOfFile:scriptPath encoding:NSUTF8StringEncoding error:nil];
 
-    NSItemProvider *resultsProvider = [[NSItemProvider alloc] initWithItem:resultsDictionary typeIdentifier:(NSString *)kUTTypePropertyList];
+  NSString *themePath       = [[NSBundle mainBundle] pathForResource:@"theme" ofType:@"css"];
+  NSString *themeContents   = [NSString stringWithContentsOfFile:themePath encoding:NSUTF8StringEncoding error:nil];
+  
+  resultsForJavaScriptFinalize = @{@"script": scriptContents, @"style": themeContents};
+  NSDictionary *resultsDictionary = @{ NSExtensionJavaScriptFinalizeArgumentKey: resultsForJavaScriptFinalize };
 
-    NSExtensionItem *resultsItem = [[NSExtensionItem alloc] init];
-    resultsItem.attachments = @[resultsProvider];
+  NSItemProvider *resultsProvider = [[NSItemProvider alloc] initWithItem:resultsDictionary typeIdentifier:(NSString *)kUTTypePropertyList];
 
-    // Signal that we're complete, returning our results.
-    [self.extensionContext completeRequestReturningItems:@[resultsItem] completionHandler:nil];
+  NSExtensionItem *resultsItem = [[NSExtensionItem alloc] init];
+  resultsItem.attachments = @[resultsProvider];
 
-    // Don't hold on to this after we finished with it.
-    self.extensionContext = nil;
+  // Signal that we're complete, passing contents of assets to JS
+  [self.extensionContext completeRequestReturningItems:@[resultsItem] completionHandler:nil];
+
+  // Don't hold on to this after we finished with it.
+  self.extensionContext = nil;
 }
 
 @end

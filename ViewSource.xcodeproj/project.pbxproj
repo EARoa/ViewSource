@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B64871F6194E1B7F0025E2EB /* rainbow.js in Resources */ = {isa = PBXBuildFile; fileRef = B64871F5194E1B7F0025E2EB /* rainbow.js */; };
+		B64871FA194E1BD20025E2EB /* theme.css in Resources */ = {isa = PBXBuildFile; fileRef = B64871F9194E1BD20025E2EB /* theme.css */; };
 		B6726067194D01CE00E97B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6726066194D01CE00E97B2E /* AppDelegate.swift */; };
 		B6726069194D01CE00E97B2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6726068194D01CE00E97B2E /* Images.xcassets */; };
 		B6726075194D01CE00E97B2E /* ViewSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6726074194D01CE00E97B2E /* ViewSourceTests.swift */; };
 		B6B770A7194D07AE00AC9281 /* ActionRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B770A6194D07AE00AC9281 /* ActionRequestHandler.m */; };
 		B6B770A9194D07AE00AC9281 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = B6B770A8194D07AE00AC9281 /* Action.js */; };
 		B6B770AC194D07AE00AC9281 /* ddagradi.ViewSource.ViewSourceExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6B770A1194D07AE00AC9281 /* ddagradi.ViewSource.ViewSourceExt.appex */; };
-		B6D31A8D194D59A100EB5ADE /* ExtensionImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D31A8C194D59A100EB5ADE /* ExtensionImages.xcassets */; };
+		B6D31A94194D652700EB5ADE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6726068194D01CE00E97B2E /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,20 @@
 			remoteGlobalIDString = B6726060194D01CE00E97B2E;
 			remoteInfo = ViewSource;
 		};
+		B6D31A90194D59BF00EB5ADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6726059194D01CE00E97B2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6726060194D01CE00E97B2E;
+			remoteInfo = ViewSource;
+		};
+		B6D31A92194D59C600EB5ADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6726059194D01CE00E97B2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6726060194D01CE00E97B2E;
+			remoteInfo = ViewSource;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +92,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B64871F5194E1B7F0025E2EB /* rainbow.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rainbow.js; sourceTree = "<group>"; };
+		B64871F9194E1BD20025E2EB /* theme.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = theme.css; sourceTree = "<group>"; };
 		B6726061194D01CE00E97B2E /* ViewSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6726065194D01CE00E97B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6726066194D01CE00E97B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +106,6 @@
 		B6B770A5194D07AE00AC9281 /* ActionRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionRequestHandler.h; sourceTree = "<group>"; };
 		B6B770A6194D07AE00AC9281 /* ActionRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionRequestHandler.m; sourceTree = "<group>"; };
 		B6B770A8194D07AE00AC9281 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
-		B6D31A8C194D59A100EB5ADE /* ExtensionImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ExtensionImages.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B64871F8194E1BC90025E2EB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B64871F5194E1B7F0025E2EB /* rainbow.js */,
+				B64871F9194E1BD20025E2EB /* theme.css */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		B6726058194D01CE00E97B2E = {
 			isa = PBXGroup;
 			children = (
@@ -174,10 +200,10 @@
 		B6B770A2194D07AE00AC9281 /* ViewSourceExt */ = {
 			isa = PBXGroup;
 			children = (
+				B64871F8194E1BC90025E2EB /* Assets */,
 				B6B770A5194D07AE00AC9281 /* ActionRequestHandler.h */,
 				B6B770A6194D07AE00AC9281 /* ActionRequestHandler.m */,
 				B6B770A8194D07AE00AC9281 /* Action.js */,
-				B6D31A8C194D59A100EB5ADE /* ExtensionImages.xcassets */,
 				B6B770A3194D07AE00AC9281 /* Supporting Files */,
 			);
 			path = ViewSourceExt;
@@ -229,6 +255,8 @@
 				B6B77053194D052000AC9281 /* PBXTargetDependency */,
 				B6B77055194D052000AC9281 /* PBXTargetDependency */,
 				B6D31A8F194D59BF00EB5ADE /* PBXTargetDependency */,
+				B6D31A91194D59BF00EB5ADE /* PBXTargetDependency */,
+				B6D31A93194D59C600EB5ADE /* PBXTargetDependency */,
 			);
 			name = ViewSourceTests;
 			productName = ViewSourceTests;
@@ -314,7 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B770A9194D07AE00AC9281 /* Action.js in Resources */,
-				B6D31A8D194D59A100EB5ADE /* ExtensionImages.xcassets in Resources */,
+				B6D31A94194D652700EB5ADE /* Images.xcassets in Resources */,
+				B64871F6194E1B7F0025E2EB /* rainbow.js in Resources */,
+				B64871FA194E1BD20025E2EB /* theme.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +407,16 @@
 			isa = PBXTargetDependency;
 			target = B6726060194D01CE00E97B2E /* ViewSource */;
 			targetProxy = B6D31A8E194D59BF00EB5ADE /* PBXContainerItemProxy */;
+		};
+		B6D31A91194D59BF00EB5ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6726060194D01CE00E97B2E /* ViewSource */;
+			targetProxy = B6D31A90194D59BF00EB5ADE /* PBXContainerItemProxy */;
+		};
+		B6D31A93194D59C600EB5ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6726060194D01CE00E97B2E /* ViewSource */;
+			targetProxy = B6D31A92194D59C600EB5ADE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
