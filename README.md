@@ -13,12 +13,12 @@ An iOS 8 extension to view the source of a given page in Safari.
 
 Container app on Home screen:
 
-![](https://cloud.githubusercontent.com/assets/185645/3280252/0c81b1d6-f451-11e3-8213-8c946367ae83.png)
+![](https://cloud.githubusercontent.com/assets/185645/3281810/93d01fdc-f4c5-11e3-964a-3c432efcaeb4.png)
 
 Share sheet:
 
-![](https://cloud.githubusercontent.com/assets/185645/3280253/0c84a314-f451-11e3-942d-ff5e9259da5e.png)
+![](https://cloud.githubusercontent.com/assets/185645/3281811/93d1567c-f4c5-11e3-9abb-9bd28ce927e0.png)
 
 Result:
 
-![](https://cloud.githubusercontent.com/assets/185645/3280254/0c87083e-f451-11e3-89fa-1b3747f52c0c.png)
+![](https://cloud.githubusercontent.com/assets/185645/3281812/93d371f0-f4c5-11e3-958e-da6d1751548f.png)
