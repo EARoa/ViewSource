@@ -10,6 +10,9 @@
 		B6726067194D01CE00E97B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6726066194D01CE00E97B2E /* AppDelegate.swift */; };
 		B6726069194D01CE00E97B2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6726068194D01CE00E97B2E /* Images.xcassets */; };
 		B6726075194D01CE00E97B2E /* ViewSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6726074194D01CE00E97B2E /* ViewSourceTests.swift */; };
+		B6B770A7194D07AE00AC9281 /* ActionRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B770A6194D07AE00AC9281 /* ActionRequestHandler.m */; };
+		B6B770A9194D07AE00AC9281 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = B6B770A8194D07AE00AC9281 /* Action.js */; };
+		B6B770AC194D07AE00AC9281 /* ddagradi.ViewSource.ViewSourceExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6B770A1194D07AE00AC9281 /* ddagradi.ViewSource.ViewSourceExt.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,7 +23,49 @@
 			remoteGlobalIDString = B6726060194D01CE00E97B2E;
 			remoteInfo = ViewSource;
 		};
+		B6B77052194D052000AC9281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6726059194D01CE00E97B2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6726060194D01CE00E97B2E;
+			remoteInfo = ViewSource;
+		};
+		B6B77054194D052000AC9281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6726059194D01CE00E97B2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6726060194D01CE00E97B2E;
+			remoteInfo = ViewSource;
+		};
+		B6B770AA194D07AE00AC9281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6726059194D01CE00E97B2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B770A0194D07AE00AC9281;
+			remoteInfo = ViewSourceExt;
+		};
+		B6B770AD194D07AE00AC9281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6726059194D01CE00E97B2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B770A0194D07AE00AC9281;
+			remoteInfo = ViewSourceExt;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6726092194D01EE00E97B2E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B6B770AC194D07AE00AC9281 /* ddagradi.ViewSource.ViewSourceExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B6726061194D01CE00E97B2E /* ViewSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +75,11 @@
 		B672606E194D01CE00E97B2E /* ViewSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6726073194D01CE00E97B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6726074194D01CE00E97B2E /* ViewSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSourceTests.swift; sourceTree = "<group>"; };
+		B6B770A1194D07AE00AC9281 /* ddagradi.ViewSource.ViewSourceExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ddagradi.ViewSource.ViewSourceExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B770A4194D07AE00AC9281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B770A5194D07AE00AC9281 /* ActionRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionRequestHandler.h; sourceTree = "<group>"; };
+		B6B770A6194D07AE00AC9281 /* ActionRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionRequestHandler.m; sourceTree = "<group>"; };
+		B6B770A8194D07AE00AC9281 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B6B7709E194D07AE00AC9281 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +112,7 @@
 			children = (
 				B6726063194D01CE00E97B2E /* ViewSource */,
 				B6726071194D01CE00E97B2E /* ViewSourceTests */,
+				B6B770A2194D07AE00AC9281 /* ViewSourceExt */,
 				B6726062194D01CE00E97B2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +122,7 @@
 			children = (
 				B6726061194D01CE00E97B2E /* ViewSource.app */,
 				B672606E194D01CE00E97B2E /* ViewSourceTests.xctest */,
+				B6B770A1194D07AE00AC9281 /* ddagradi.ViewSource.ViewSourceExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +162,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B6B770A2194D07AE00AC9281 /* ViewSourceExt */ = {
+			isa = PBXGroup;
+			children = (
+				B6B770A5194D07AE00AC9281 /* ActionRequestHandler.h */,
+				B6B770A6194D07AE00AC9281 /* ActionRequestHandler.m */,
+				B6B770A8194D07AE00AC9281 /* Action.js */,
+				B6B770A3194D07AE00AC9281 /* Supporting Files */,
+			);
+			path = ViewSourceExt;
+			sourceTree = "<group>";
+		};
+		B6B770A3194D07AE00AC9281 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6B770A4194D07AE00AC9281 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,10 +191,13 @@
 				B672605D194D01CE00E97B2E /* Sources */,
 				B672605E194D01CE00E97B2E /* Frameworks */,
 				B672605F194D01CE00E97B2E /* Resources */,
+				B6726092194D01EE00E97B2E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B6B770AB194D07AE00AC9281 /* PBXTargetDependency */,
+				B6B770AE194D07AE00AC9281 /* PBXTargetDependency */,
 			);
 			name = ViewSource;
 			productName = ViewSource;
@@ -135,11 +216,30 @@
 			);
 			dependencies = (
 				B6726070194D01CE00E97B2E /* PBXTargetDependency */,
+				B6B77053194D052000AC9281 /* PBXTargetDependency */,
+				B6B77055194D052000AC9281 /* PBXTargetDependency */,
 			);
 			name = ViewSourceTests;
 			productName = ViewSourceTests;
 			productReference = B672606E194D01CE00E97B2E /* ViewSourceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6B770A0194D07AE00AC9281 /* ViewSourceExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B770AF194D07AE00AC9281 /* Build configuration list for PBXNativeTarget "ViewSourceExt" */;
+			buildPhases = (
+				B6B7709D194D07AE00AC9281 /* Sources */,
+				B6B7709E194D07AE00AC9281 /* Frameworks */,
+				B6B7709F194D07AE00AC9281 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewSourceExt;
+			productName = ViewSourceExt;
+			productReference = B6B770A1194D07AE00AC9281 /* ddagradi.ViewSource.ViewSourceExt.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -157,6 +257,10 @@
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = B6726060194D01CE00E97B2E;
 					};
+					B6B770A0194D07AE00AC9281 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 9CX52884JH;
+					};
 				};
 			};
 			buildConfigurationList = B672605C194D01CE00E97B2E /* Build configuration list for PBXProject "ViewSource" */;
@@ -173,6 +277,7 @@
 			targets = (
 				B6726060194D01CE00E97B2E /* ViewSource */,
 				B672606D194D01CE00E97B2E /* ViewSourceTests */,
+				B6B770A0194D07AE00AC9281 /* ViewSourceExt */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +295,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B7709F194D07AE00AC9281 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B770A9194D07AE00AC9281 /* Action.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +325,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B6B7709D194D07AE00AC9281 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B770A7194D07AE00AC9281 /* ActionRequestHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -219,6 +340,26 @@
 			isa = PBXTargetDependency;
 			target = B6726060194D01CE00E97B2E /* ViewSource */;
 			targetProxy = B672606F194D01CE00E97B2E /* PBXContainerItemProxy */;
+		};
+		B6B77053194D052000AC9281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6726060194D01CE00E97B2E /* ViewSource */;
+			targetProxy = B6B77052194D052000AC9281 /* PBXContainerItemProxy */;
+		};
+		B6B77055194D052000AC9281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6726060194D01CE00E97B2E /* ViewSource */;
+			targetProxy = B6B77054194D052000AC9281 /* PBXContainerItemProxy */;
+		};
+		B6B770AB194D07AE00AC9281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6B770A0194D07AE00AC9281 /* ViewSourceExt */;
+			targetProxy = B6B770AA194D07AE00AC9281 /* PBXContainerItemProxy */;
+		};
+		B6B770AE194D07AE00AC9281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6B770A0194D07AE00AC9281 /* ViewSourceExt */;
+			targetProxy = B6B770AD194D07AE00AC9281 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -305,9 +446,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ViewSource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,9 +460,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ViewSource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +505,38 @@
 			};
 			name = Release;
 		};
+		B6B770B0194D07AE00AC9281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ViewSourceExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "ddagradi.ViewSource.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B6B770B1194D07AE00AC9281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ViewSourceExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "ddagradi.ViewSource.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -377,6 +556,7 @@
 				B672607A194D01CE00E97B2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B672607B194D01CE00E97B2E /* Build configuration list for PBXNativeTarget "ViewSourceTests" */ = {
 			isa = XCConfigurationList;
@@ -385,6 +565,16 @@
 				B672607D194D01CE00E97B2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6B770AF194D07AE00AC9281 /* Build configuration list for PBXNativeTarget "ViewSourceExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B770B0194D07AE00AC9281 /* Debug */,
+				B6B770B1194D07AE00AC9281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
