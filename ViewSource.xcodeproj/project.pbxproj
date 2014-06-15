@@ -13,6 +13,7 @@
 		B6B770A7194D07AE00AC9281 /* ActionRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B770A6194D07AE00AC9281 /* ActionRequestHandler.m */; };
 		B6B770A9194D07AE00AC9281 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = B6B770A8194D07AE00AC9281 /* Action.js */; };
 		B6B770AC194D07AE00AC9281 /* ddagradi.ViewSource.ViewSourceExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6B770A1194D07AE00AC9281 /* ddagradi.ViewSource.ViewSourceExt.appex */; };
+		B6D31A8D194D59A100EB5ADE /* ExtensionImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D31A8C194D59A100EB5ADE /* ExtensionImages.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,13 @@
 			remoteGlobalIDString = B6B770A0194D07AE00AC9281;
 			remoteInfo = ViewSourceExt;
 		};
+		B6D31A8E194D59BF00EB5ADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6726059194D01CE00E97B2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6726060194D01CE00E97B2E;
+			remoteInfo = ViewSource;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +88,7 @@
 		B6B770A5194D07AE00AC9281 /* ActionRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionRequestHandler.h; sourceTree = "<group>"; };
 		B6B770A6194D07AE00AC9281 /* ActionRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionRequestHandler.m; sourceTree = "<group>"; };
 		B6B770A8194D07AE00AC9281 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		B6D31A8C194D59A100EB5ADE /* ExtensionImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ExtensionImages.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +177,7 @@
 				B6B770A5194D07AE00AC9281 /* ActionRequestHandler.h */,
 				B6B770A6194D07AE00AC9281 /* ActionRequestHandler.m */,
 				B6B770A8194D07AE00AC9281 /* Action.js */,
+				B6D31A8C194D59A100EB5ADE /* ExtensionImages.xcassets */,
 				B6B770A3194D07AE00AC9281 /* Supporting Files */,
 			);
 			path = ViewSourceExt;
@@ -218,6 +228,7 @@
 				B6726070194D01CE00E97B2E /* PBXTargetDependency */,
 				B6B77053194D052000AC9281 /* PBXTargetDependency */,
 				B6B77055194D052000AC9281 /* PBXTargetDependency */,
+				B6D31A8F194D59BF00EB5ADE /* PBXTargetDependency */,
 			);
 			name = ViewSourceTests;
 			productName = ViewSourceTests;
@@ -303,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B770A9194D07AE00AC9281 /* Action.js in Resources */,
+				B6D31A8D194D59A100EB5ADE /* ExtensionImages.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +372,11 @@
 			isa = PBXTargetDependency;
 			target = B6B770A0194D07AE00AC9281 /* ViewSourceExt */;
 			targetProxy = B6B770AD194D07AE00AC9281 /* PBXContainerItemProxy */;
+		};
+		B6D31A8F194D59BF00EB5ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6726060194D01CE00E97B2E /* ViewSource */;
+			targetProxy = B6D31A8E194D59BF00EB5ADE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -508,6 +525,8 @@
 		B6B770B0194D07AE00AC9281 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -526,6 +545,8 @@
 		B6B770B1194D07AE00AC9281 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ViewSourceExt/Info.plist;
